@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- css style -->
     <style>
       .font-lato{
@@ -24,6 +27,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              backgroundColor:{
+                'brand-bg':'#F85559'
               }
             }
           }
@@ -35,50 +41,58 @@
 <!-- header -->
     <header>
 
-        <nav>
+        <nav class="px-12 lg:px-40 my-5">
 
-            <div class="navbar bg-base-100">
+            <div class="flex items-center justify-between bg-brand-bg rounded-full px-5 py-2">
+                         
+                <div class="flex lg:flex-row flex-row-reverse w-full lg:w-3/5 justify-between items-center">
+                    <div class="lg:hidden dropdown">
 
-                  <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                    
+                       <ul tabindex="0" class=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                     
+                       </ul>
+    
+                    </div>
+                     
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu-horizontal flex gap-4">
+                       <li class="hover:remove"><a class="text-white font-medium">Home</a></li>
+                       <li><a class="text-white font-medium">About Us</a></li>
+                       <li><a class="text-white font-medium">Shop</a></li>
+                       <li><a class="text-white font-medium">All Fruits</a></li>
                         </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                  </div>
+                      </div>
+                    
+                      <div>
+                        <a href="" class="flex items-center gap-2">
+                             <img src="images/logo.png" alt="">
+                             <span class="text-2xl font-bold text-white">Fruit Burst</span>   
+                         </a>
+                      </div> 
+
+                </div>
+                       
+                       
+
+                     
+
+                
 
 
-                  <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                  </div>
-
-
-                  <div class="navbar-end">
-                  <a class="btn">Button</a>
+                  <div class="hidden lg:flex justify-center items-center relative">
+                        
+                            <input type="text" placeholder="Search here" class="py-2 px-5 rounded-3xl outline-none">
+                               <i class="fa-solid fa-magnifying-glass absolute top-3 right-4 text-gray-500"></i>
+                             
+                        
                   </div>
 
 
@@ -91,6 +105,12 @@
 <!-- main -->
     <main>
 
+
+
+
+
+
+    
     </main>
 
 <!-- footer -->
