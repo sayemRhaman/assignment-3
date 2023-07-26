@@ -235,7 +235,7 @@
            <!-- deal of the day -->
         
         <section class="mt-10 mb-8 lg:mt-20 mx-12 lg:mx-40">
-               <div class="flex flex-col lg:flex-row gap-10">
+               <div class="flex flex-col lg:flex-row gap-10 items-center">
                     <div class="flex-1 space-y-5">
                         <h3 class="text-3xl text-black font-bold">Deal of the day</h3>
                         <p class="text-base font-normal text-gray-600">
@@ -296,19 +296,37 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                       </div>
-                            <a href="" id="modalOne" onclick="showModal()" class="text-[#F85559] text-base font-bold">
-                              Details
-                            </a>
+
+                <!-- modal section -->
+                            
+                            <button class=" text-[#F85559] text-base font-bold" onclick="my_modal_1.showModal()">Details</button>
+
+                             <dialog id="my_modal_1" class="modal w-96  lg:w-full">
+                              <form method="dialog" class="modal-box flex flex-col items-center p-10 ">
+                                 <img src="./images/fruit6.png" class="w-20">
+                                   <h3 class="font-bold text-lg mt-3">Apples</h3>
+                                   <p class="py-2">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+
+                                  <div class="text-[#F85559]">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  </div>
+
+                                <div class="modal-action">
+                                  
+                                  <button class=" py-2 px-4 rounded-xl border border-[#F85559] text-lg text-[#F85559] font-semibold mr-3">Close</button>
+                                  <button class=" py-2 px-4 rounded-xl bg-brand-bg text-lg text-white font-semibold">Bye Now</button>
+                                </div>
+                              </form>
+                             </dialog>
+                <!-- modal end -->
+
                   </div>
                 </div>
               </div>
-
-             
-
-       
-
-               
-
 
                 <!-- card 2-->
 
@@ -330,9 +348,32 @@
                             <i class="fa-regular fa-star"></i>
                           </div> 
 
-                             <a href="" class="text-[#F85559] text-base font-bold">
-                                Details
-                              </a>
+                        <!-- modal section -->
+                            
+                            <button class="text-[#F85559] text-base font-bold" onclick="my_modal_2.showModal()">Details</button>
+
+                            <dialog id="my_modal_2" class="modal w-96  lg:w-full">
+                             <form method="dialog" class="modal-box flex flex-col items-center p-10 ">
+                                <img src="./images/fruit7.png" class="w-20">
+                                  <h3 class="font-bold text-lg mt-3">Orange</h3>
+                                  <p class="py-2">Oranges are a good source of dietary fiber, which aids in digestion, promotes bowel regularity, and helps maintain a healthy gut.</p>
+
+                                 <div class="text-[#F85559]">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-regular fa-star"></i>
+                                 </div>
+
+                               <div class="modal-action">
+                              
+                                 <button class=" py-2 px-4 rounded-xl border border-[#F85559] text-lg text-[#F85559] font-semibold mr-3">Close</button>
+                                 <button class=" py-2 px-4 rounded-xl bg-brand-bg text-lg text-white font-semibold">Bye Now</button>
+                               </div>
+                             </form>
+                            </dialog>
+                         <!-- modal end -->
                       </div>
                     </div>
                 </div>
@@ -356,9 +397,37 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                           </div>
-                               <a href="" class="text-[#F85559] text-base font-bold">
-                                  Details
-                               </a>
+
+
+                               
+                        <!-- modal section -->
+                            
+                            <button class="text-[#F85559] text-base font-bold" onclick="my_modal_3.showModal()">Details</button>
+
+                            <dialog id="my_modal_3" class="modal w-96  lg:w-full">
+                             <form method="dialog" class="modal-box flex flex-col items-center p-10 ">
+                                <img src="./images/fruit8.png" class="w-20">
+                                  <h3 class="font-bold text-lg mt-3">Red Dragon</h3>
+                                  <p class="py-2">The fruit has a high water content, which helps keep you hydrated and contributes to your daily fluid intake.</p>
+
+                                 <div class="text-[#F85559]">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-regular fa-star"></i>
+                                 </div>
+
+                               <div class="modal-action">
+                              
+                                 <button class=" py-2 px-4 rounded-xl border border-[#F85559] text-lg text-[#F85559] font-semibold mr-3">Close</button>
+                                 <button class=" py-2 px-4 rounded-xl bg-brand-bg text-lg text-white font-semibold">Bye Now</button>
+                               </div>
+                             </form>
+                            </dialog>
+                         <!-- modal end -->
+
+
                       </div>
                     </div>
                   </div>
@@ -383,14 +452,45 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                             <i class="fa-regular fa-star"></i>
                           </div> 
-                                 <a href="" class="text-[#F85559] text-base font-bold">
-                                    Details
-                                 </a>
+
+
+                                 <!-- modal section -->
+                            
+                            <button class="text-[#F85559] text-base font-bold" onclick="my_modal_4.showModal()">Details</button>
+
+                            <dialog id="my_modal_4" class="modal w-96  lg:w-full">
+                             <form method="dialog" class="modal-box flex flex-col items-center p-10 ">
+                                <img src="./images/fruit9.png" class="w-20">
+                                  <h3 class="font-bold text-lg mt-3">Banana</h3>
+                                  <p class="py-2"> Bananas are relatively inexpensive compared to many other fruits, making them an accessible and affordable option for a nutritious diet.</p>
+
+                                 <div class="text-[#F85559]">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-regular fa-star"></i>
+                                 </div>
+
+                               <div class="modal-action">
+                              
+                                 <button class=" py-2 px-4 rounded-xl border border-[#F85559] text-lg text-[#F85559] font-semibold mr-3">Close</button>
+                                 <button class=" py-2 px-4 rounded-xl bg-brand-bg text-lg text-white font-semibold">Bye Now</button>
+                               </div>
+                             </form>
+                            </dialog>
+                         <!-- modal end -->
+
+
                       </div>
                     </div>
                   </div>
 
     
+
+
+
+
 
         </div>
 
